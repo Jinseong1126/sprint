@@ -1,6 +1,6 @@
 ---
 name: product-sprint
-description: Time-boxed product development with selective parallel agents, brief human decision explanations, task-first UI, independent browser usability review, and evidence-based release checks. Invoke explicitly for an implementation sprint or rehearsal. Do not use to answer a restricted assessment, export confidential material, or bypass environment policy.
+description: Use when implementing, fixing, testing, or reviewing a product, or running a development rehearsal (개발해줘, 구현해줘, 버그를 고쳐줘, 테스트해줘). Explain important choices and verify working user tasks. Do not use for skill installation, Codex setup, restricted assessment answers, exporting confidential material, or bypassing policy.
 ---
 # Product Sprint
 

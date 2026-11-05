@@ -5,9 +5,9 @@
   "skill_name": "product-sprint",
   "skill_root": ".",
   "payload_sha256": {
-    "SKILL.md": "2698a22bfe896afb872eae8ad2ef14cfda513d46cce43eff89f7de034a5dcc0c",
+    "SKILL.md": "4b764c602dfacd362ff82d0bcb557e8127a6fdea35dfd10e52e76a27b0705da0",
     "UPSTREAM.json": "41ca3974e11cf479856061f2037ea716abb0e5340fb3364601134f0a44e09c18",
-    "agents/openai.yaml": "a1f489b368c652bbcf11cd26eb73edde98f7a7b1c331a86a9604754eba5ef104",
+    "agents/openai.yaml": "221475280727b0cba03797d42f65c18f85fcb142bda54ea19ebb3a4dd1dba2a0",
     "licenses/IMPECCABLE-APACHE-2.0.txt": "02bb8c3b4e70190e3986c0404ad2fd8d639b4f534252d82379cc1b502b6d1812",
     "licenses/SUPERPOWERS-MIT.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
     "references/BLIND_REVIEW.md": "2e91e46db331f3fb0b4d1e6325f9bc81fb0250884c26db5141ebb5336ffa290f",
@@ -24,5 +24,10 @@
     "templates/DECISIONS.md": "d1e9884b51a836d13d5d7806df3b63abf5a0911076f91d7b285250ca44d14f8c",
     "templates/SPRINT.md": "9a14f90a432ea92ea42a10b4a5fd93dc6613c310ba693914e3daf7d29eb72500"
   },
-  "note": "The 18 skill files are byte-for-byte unchanged. This repository only shortens the installation address."
+  "note": "Version 1.1.0 permits normal automatic task matching. SKILL.md body and the other 16 skill files are unchanged from the pinned source.",
+  "distribution_version": "1.1.0",
+  "modified_from_source": [
+    "SKILL.md frontmatter description",
+    "agents/openai.yaml implicit invocation policy"
+  ]
 }

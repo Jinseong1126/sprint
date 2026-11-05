@@ -6,7 +6,9 @@
 Jinseong1126/sprint 스킬 설치
 ```
 
-Codex **대화창**에 입력하십시오. 설치 후에는 `$product-sprint`로 시작합니다.
+Codex **대화창**에 입력하십시오. 설치 후에는 과제 폴더에서 **“과제 안내를 읽고 개발을 시작해줘”**처럼 평소대로 요청하십시오. 개발·수정·검증 요청에 맞으면 Codex가 이 스킬을 자동으로 선택할 수 있도록 설정되어 있습니다. `$product-sprint`는 직접 지정하고 싶을 때 쓰는 선택 사항입니다.
+
+자동 선택은 Codex가 요청 내용에 따라 결정하며 항상 선택됨을 보장하지는 않습니다. 1.1.0부터 자동 선택을 허용합니다.
 
 ## Codex 설치 안내
 
@@ -23,7 +25,7 @@ Codex **대화창**에 입력하십시오. 설치 후에는 `$product-sprint`로
 
 ## 출처
 
-스킬 파일 18개는 [원본 준비물의 고정 커밋](https://github.com/Jinseong1126/codex-product-sprint-kit/tree/ad517ddd37cf447c6206636656eba2a4d57263aa/skills/product-sprint)에서 내용 변경 없이 가져왔습니다.
+[원본 준비물의 고정 커밋](https://github.com/Jinseong1126/codex-product-sprint-kit/tree/ad517ddd37cf447c6206636656eba2a4d57263aa/skills/product-sprint)을 바탕으로 합니다. 스킬 파일 18개 중 16개와 SKILL.md 본문은 그대로이며, 설명과 자동 선택 정책만 수정했습니다.
 전체 준비·검증·게시 도구는 [원본 저장소](https://github.com/Jinseong1126/codex-product-sprint-kit)에 있습니다.
 원본 커밋과 파일 해시는 [SOURCE.json](SOURCE.json), 외부 참고문서 출처는 [THIRD_PARTY.md](THIRD_PARTY.md)에 있습니다.
 
