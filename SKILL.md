@@ -32,7 +32,7 @@ description: Coordinate multi-agent product development and competition workflow
 - 작업자 합류·상태·장애 복구·AI 중단: `references/TEAM_PROTOCOL.md`; 허용된 공유 프로젝트에서는 `scripts/session_board.py`로 역할과 인계를 기록합니다.
 - 방향·알고리즘·업무 규칙·스코프 변경: `references/DECISION_BRIEF.md`.
 - UI 설계/수정: `references/UI_WORKFLOW.md`; 복잡성·문구 문제에만 `references/upstream/distill.md`, `clarify.md`.
-- 회사 가치·브랜드 경험: `references/COMPANY_VALUES.md`; 확인된 공식 가치를 사용자 경험·제품 동작·표현·완료 기준에 연결합니다.
+- 회사 가치·브랜드 경험: `references/COMPANY_VALUES.md`; 구성원용 반복 서비스에서는 자신이 하는 일의 가치·자부심·존중·감사를 느낄 수 있도록 UI 담당자가 문구·이미지·배치와 실제 사용 경험을 설계합니다. 확인된 공식 가치와 제품 품질 기준을 함께 연결합니다.
 - 분업·통합·재접속: `references/ORCHESTRATION.md`.
 - 업무 데이터·시간·정확성 검증: `references/DOMAIN_VALIDATION.md`.
 - 개발 중 사용자 이해·직접 검수·실제 판단 기록: `references/UNDERSTANDING.md`.
