@@ -4,11 +4,11 @@
   "source_path": "skills/product-sprint",
   "skill_name": "product-sprint",
   "skill_root": ".",
-  "distribution_version": "2.0.0",
+  "distribution_version": "2.1.0",
   "previous_distribution": {
     "repository": "Jinseong1126/sprint",
-    "commit": "3c4287e4b168cde3a33fbd59fa4fec2fd094a04e",
-    "version": "1.1.0"
+    "commit": "5f6103e933374ce0c020c3d6db596938d472a65e",
+    "version": "2.0.0"
   },
   "modified_from_source": [
     "SKILL.md",
@@ -16,10 +16,12 @@
     "references/DECISION_BRIEF.md",
     "references/ORCHESTRATION.md",
     "references/RELEASE.md",
+    "references/UI_WORKFLOW.md",
     "templates/DECISIONS.md",
     "templates/SPRINT.md"
   ],
   "added_runtime_files": [
+    "references/COMPANY_VALUES.md",
     "references/COMPETITION_START.md",
     "references/TEAM_PROTOCOL.md",
     "references/UNDERSTANDING.md",
@@ -28,30 +30,31 @@
     "templates/UNDERSTANDING.md"
   ],
   "payload_sha256": {
-    "SKILL.md": "067b7807a9c2a349d1c35d6e798b27cfac7b8f9bbe24b0f97d06e2e62fd93361",
+    "SKILL.md": "ae567042fa2fb6141d523aaee57cdb3845c0058c1abf2daee26cb8852be6ba07",
     "UPSTREAM.json": "41ca3974e11cf479856061f2037ea716abb0e5340fb3364601134f0a44e09c18",
     "agents/openai.yaml": "221475280727b0cba03797d42f65c18f85fcb142bda54ea19ebb3a4dd1dba2a0",
     "licenses/IMPECCABLE-APACHE-2.0.txt": "02bb8c3b4e70190e3986c0404ad2fd8d639b4f534252d82379cc1b502b6d1812",
     "licenses/SUPERPOWERS-MIT.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
     "references/BLIND_REVIEW.md": "2e91e46db331f3fb0b4d1e6325f9bc81fb0250884c26db5141ebb5336ffa290f",
-    "references/COMPETITION_START.md": "39cf100e4dc579eee6b8e3daff719ae0a6673e2eec283b83e08e14293587c101",
-    "references/DECISION_BRIEF.md": "828c4b4665b42b167696738e33404ccafada16f884528dad53daa0e586510f35",
+    "references/COMPANY_VALUES.md": "edd88521b00e86d225247e204228128a950ea2d72e5283c33810ff45e3a7e9ef",
+    "references/COMPETITION_START.md": "e625721705ede6756705cad4b38b56d4efe70e4543e832287e64a0450693fb81",
+    "references/DECISION_BRIEF.md": "dc2db504d19d4ec5baaf34cb6026444d51fb5f59905232a4fafa511409bdb020",
     "references/DOMAIN_VALIDATION.md": "5acc6052aceec2cf227033b8cbadd4df64bbd04eba8e6905190cc0f07543bb4b",
-    "references/ORCHESTRATION.md": "cb90e060a522c41697d3227be313b82c6781346e75e32e65ab1b03e3946b96e3",
+    "references/ORCHESTRATION.md": "c8617eea21e7c8227cf3b0e0011352b1a0d2fc1c72318fe6b60d8f6263c88df2",
     "references/REHEARSAL.md": "2f776f8d5a8d4a30b67357f2c87a1e12c1e31aa3af5eb58e6a9ffbfc325d16c2",
     "references/RELEASE.md": "8f6f2acaf148fee7e34bbfc1540c7907102c155e3ceb7ae96dafc2364b8c4146",
-    "references/TEAM_PROTOCOL.md": "3f872d7b3957b640a4700811bf2e6f51cf10be400ba84cfc836174cbb0ca126d",
-    "references/UI_WORKFLOW.md": "92dce4e443b8fb811435cfbf833f9c4e9b42bba70ec32260919d0c6aa48a57c5",
-    "references/UNDERSTANDING.md": "be29e78f9513cc370931dc38c2878e5bd740a76b20c99acac33d22a7972908e8",
+    "references/TEAM_PROTOCOL.md": "26cdcd6e0734a72f0a12672fee3bdaafb0a37031a866880076c7dd2854d06356",
+    "references/UI_WORKFLOW.md": "963138c99ccde25b5d340810a47b50e4bb0906455cf34194557bc3cfaea25304",
+    "references/UNDERSTANDING.md": "d449843f97b707f6d83e69b5a8c2f2ef35013f7acae8c1ad5959709b6b9efc6d",
     "references/upstream/clarify.md": "4738e125835bd6c166aec2622977c9bc59bada52aaeb186585ed38b3900860b5",
     "references/upstream/distill.md": "54be6eca781b8e2d0f7e850277b330cade905ee4df4d9986519aac27538af724",
     "references/upstream/verification-before-completion.md": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
     "scripts/browser_smoke.py": "702c3e2cfd44647841ce5fbc8c28e6d4a1b59dbbb3344f032faf217a71ecece5",
     "scripts/session_board.py": "87870b5bc3dad7c11e6aef99afd1a975d5d0acd0ff1baa7dde3e184536d53cd3",
-    "templates/CONTRACTS.md": "022f3800278c76fe81603c93bdc5ee76a68371230bbb69235993e33ee340d68d",
-    "templates/DECISIONS.md": "78c9923e278beb981b8bd058ccbcf98224edb72171709ff41eb2d3fd4a88c909",
-    "templates/SPRINT.md": "1c77165fd56d956c46ae9a3c4d9f7f861afefc9d7c5cefa8323e868b04b296b8",
-    "templates/UNDERSTANDING.md": "ae3becf2f67c779af2bd79b620de999d3307a42a4df517a0ad158c3bbfcd9c3b"
+    "templates/CONTRACTS.md": "2927dace9381d9bedd9f877f9f5a175b3e5b2159f87d83008b653aa0bed74236",
+    "templates/DECISIONS.md": "09ecebe3ec76eb6ce5209952121eb849f31edb6da9a2309dc641cfed4e0e0c47",
+    "templates/SPRINT.md": "34c1de2622092f5c99b3aed6022946997e9539a1747b23dfeb79f5343fe186a7",
+    "templates/UNDERSTANDING.md": "527c28387485841393f8f2a877bae8a059d49fd99767a78fb8b1021caa2cc98e"
   },
-  "note": "Generic competition startup, ten logical team roles, local coordination ledger, integration/verification and human-understanding guidance. No actual competition problem, data, answer or finished application. Selected upstream references and licenses are unchanged. Runtime hashes exclude packaging metadata and tests."
+  "note": "Session 1 orchestrates delivery; session 2 directly explains implementation to the user; eight other workers implement and verify. Product UI quality includes verified company values mapped to user experience, behavior and acceptance criteria. Public company-value sources are cited separately from actual competition material. No actual competition problem, data, answers or finished application."
 }

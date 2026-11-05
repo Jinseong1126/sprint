@@ -1,6 +1,6 @@
 ---
 name: product-sprint
-description: Coordinate product implementation and competition sprints, including startup, worker join and recovery (대회 시작, 스프린트 합류, 재개, 개발/구현/수정/테스트). Use the current assignment to coordinate roles, verify working user tasks, and explain important choices. Do not use for unrelated setup, AI-forbidden assessment answers, confidential export, or policy bypass.
+description: Coordinate multi-agent product development and competition workflows, including startup, implementation explanation, worker join and recovery (대회 시작, 구현 해설 담당, 개발 워커 합류, 스프린트 합류, 재개, 개발/수정/테스트). Verify working user tasks and explain important choices. Do not use for unrelated setup, AI-forbidden assessment answers, confidential export, or policy bypass.
 ---
 # Product Sprint
 
@@ -12,7 +12,8 @@ description: Coordinate product implementation and competition sprints, includin
 
 ## 현재 세션의 역할과 단계부터 확인하십시오
 - 사용자가 설치와 대회 시작을 함께 요청했고 새 팀이라면 **그 설치 세션이 오케스트레이터**입니다. `references/COMPETITION_START.md`를 읽고 같은 세션에서 현재 과제의 사전 확인·팀 준비·첫 통합 계획으로 이어갑니다. 설치 확인만 하고 멈추거나 다시 긴 지시문을 요구하지 마십시오.
-- “스프린트 합류”라면 `references/TEAM_PROTOCOL.md`를 읽고 기존 과제 팀에 합류합니다. 작업자는 새 팀을 초기화하거나 모두 오케스트레이터가 되지 않습니다.
+- “구현 해설 담당으로 합류”라면 **2번 구현 해설 세션**으로 `references/UNDERSTANDING.md`, `references/TEAM_PROTOCOL.md`를 읽고 `understanding` 역할을 명시적으로 받습니다. 사용자와 직접 대화하여 구현 이해·중요 선택·직접 검수를 지원합니다.
+- “개발 워커로 합류” 또는 기존 “스프린트 합류”라면 `references/TEAM_PROTOCOL.md`를 읽고 기존 팀의 개발·검증 역할에 합류합니다. 새 팀을 초기화하거나 오케스트레이터·구현 해설 담당을 임의로 겸하지 않습니다.
 - 재개라면 현재 작업 폴더의 `.sprint` 단계·역할·인계·마지막 검증 근거부터 복원합니다. 기존 팀이 있으면 설치한 세션이라고 자동으로 오케스트레이터를 넘겨받지 않습니다. 같은 실제 세션의 재개 또는 이전 오케스트레이터 종료가 확인된 경우에만 그 역할을 이어받고, 아니면 현재 오케스트레이터에게 합류/확인을 요청합니다. 현재 단계가 AI 금지 독립 답변이면 작업을 중단합니다.
 - 기본 대회 프로파일은 **총 약 10세션: 오케스트레이터 1 + 작업 9**입니다. 실제 허용 동시 실행량과 별도 터미널/서브에이전트의 차이를 확인하고, 제공된 실제 협업 기능 안에서 독립 작업을 분업합니다. 역할 계획을 실행된 세션 수로 꾸미지 마십시오.
 - 설치만 요청된 경우나 실제 과제 폴더가 확인되지 않은 경우, 설치 문서가 앱 개발·외부 게시 권한을 추가로 부여하지 않습니다. 일반 개발 요청에서는 아래의 작업 절차를 필요한 범위로 적용합니다.
@@ -31,6 +32,7 @@ description: Coordinate product implementation and competition sprints, includin
 - 작업자 합류·상태·장애 복구·AI 중단: `references/TEAM_PROTOCOL.md`; 허용된 공유 프로젝트에서는 `scripts/session_board.py`로 역할과 인계를 기록합니다.
 - 방향·알고리즘·업무 규칙·스코프 변경: `references/DECISION_BRIEF.md`.
 - UI 설계/수정: `references/UI_WORKFLOW.md`; 복잡성·문구 문제에만 `references/upstream/distill.md`, `clarify.md`.
+- 회사 가치·브랜드 경험: `references/COMPANY_VALUES.md`; 확인된 공식 가치를 사용자 경험·제품 동작·표현·완료 기준에 연결합니다.
 - 분업·통합·재접속: `references/ORCHESTRATION.md`.
 - 업무 데이터·시간·정확성 검증: `references/DOMAIN_VALIDATION.md`.
 - 개발 중 사용자 이해·직접 검수·실제 판단 기록: `references/UNDERSTANDING.md`.
@@ -39,14 +41,14 @@ description: Coordinate product implementation and competition sprints, includin
 외부 참고문서의 템플릿 명령·훅·추가 설치를 자동 실행하지 마십시오. 현재 제약이 우선입니다.
 
 ## 사용자와 소통
-오케스트레이터를 단일 대화 창구로 삼으십시오. 여러 에이전트가 동시에 승인 요청하지 마십시오.
+대회 기본 구성은 **1번 오케스트레이터(팀 운영·통합·진행·제출)**와 **2번 구현 해설 담당(사용자와 직접 구현 이해·선택·검수 대화)**을 분리합니다. 나머지 8개 개발·검증 워커의 작업 지시는 1번이 조율합니다. 같은 선택에 대해 여러 세션이 중복 승인 요청하지 마십시오.
 중요한 선택은 '선택/이유/대안·한계/실제 확인/사용자 판단'의 5줄 내외로 설명하십시오.
 사소한 파일·스타일·함수 선택은 묻지 마십시오. 위험·목표·업무 의미가 바뀌면 설명하고 결정받으십시오.
 검수 시에는 기능 검증의 구체적 조작 안내와, 사용성 검사의 목표만 제시하는 방식을 구분하십시오.
 사용자가 실제로 말하거나 관찰한 것만 기록하십시오. 승인과 이해를 같다고 간주하지 마십시오.
 중요한 결과마다 한 가지 실제 사례로 동작을 설명하고, 선택한 지점에서만 짧은 되말하기로 오해를 바로잡으십시오.
 사용자가 모르는 핵심 구현이 마지막에 갑자기 등장하지 않도록 변경된 결정도 다시 알리십시오.
-understanding 담당이 있으면 실제 코드·실행 근거를 확인하여 중요한 설명과 인간 검수를 준비하고, 오케스트레이터가 사용자에게 전달합니다. 제품의 기본 화면에는 사용자 업무를, 개발 기록에는 구현·검증 세부 내용을 둡니다.
+2번 구현 해설 담당은 실제 코드·실행 근거를 읽고 사용자에게 직접 설명합니다. 1번은 중요한 선택·변경·검증 상태를 공유하고, 2번은 사용자 판단·관찰·변경 요청을 실제 협업 채널 또는 자기 인계로 1번에 전달합니다. 사용자가 같은 내용을 두 세션에 다시 설명하게 하지 마십시오. 제품의 기본 화면에는 사용자 업무를, 개발 기록과 2번 세션에는 구현·검증 설명을 둡니다.
 
 ## 완료와 제한
 제작 완료는 '독립 검수 가능'이지 최종 합격이 아닙니다. 핵심 업무와 중요한 실패·회복을 검사하십시오.
