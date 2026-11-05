@@ -1,0 +1,59 @@
+{
+  "verified_on": "2026-11-05",
+  "note": "Read-only selected upstream documents, no external CLI/hooks/runtime bundled. Original file bytes preserved; git blob hashes independently checked.",
+  "sources": [
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "83dc1bbe4c37636632e72a7752e9cc433e9a9901",
+      "license": "Apache-2.0",
+      "paths": [
+        "skill/reference/distill.md",
+        "skill/reference/clarify.md",
+        "LICENSE"
+      ],
+      "local_entries": [
+        {
+          "local_path": "skills/product-sprint/references/upstream/distill.md",
+          "git_blob_sha1": "cf8225ce94175f32d0b4f723f67019527ed6836f",
+          "sha256": "54be6eca781b8e2d0f7e850277b330cade905ee4df4d9986519aac27538af724",
+          "expected_upstream_git_blob": "cf8225ce94175f32d0b4f723f67019527ed6836f"
+        },
+        {
+          "local_path": "skills/product-sprint/references/upstream/clarify.md",
+          "git_blob_sha1": "309a056793ff912ff7b412f797a5ecc643d36cc9",
+          "sha256": "4738e125835bd6c166aec2622977c9bc59bada52aaeb186585ed38b3900860b5",
+          "expected_upstream_git_blob": "309a056793ff912ff7b412f797a5ecc643d36cc9"
+        },
+        {
+          "local_path": "skills/product-sprint/licenses/IMPECCABLE-APACHE-2.0.txt",
+          "git_blob_sha1": "bb3f6d23b1f8025514a62a12b51b47d73e3c9aa9",
+          "sha256": "02bb8c3b4e70190e3986c0404ad2fd8d639b4f534252d82379cc1b502b6d1812",
+          "expected_upstream_git_blob": "bb3f6d23b1f8025514a62a12b51b47d73e3c9aa9"
+        }
+      ]
+    },
+    {
+      "repo": "obra/superpowers",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "license": "MIT",
+      "paths": [
+        "skills/verification-before-completion/SKILL.md",
+        "LICENSE"
+      ],
+      "local_entries": [
+        {
+          "local_path": "skills/product-sprint/references/upstream/verification-before-completion.md",
+          "git_blob_sha1": "7d45333cc4a49c57a80df6c1fe2fa777a207afbc",
+          "sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
+          "expected_upstream_git_blob": "7d45333cc4a49c57a80df6c1fe2fa777a207afbc"
+        },
+        {
+          "local_path": "skills/product-sprint/licenses/SUPERPOWERS-MIT.txt",
+          "git_blob_sha1": "abf0390320aa14406af7a520b9b0739fdda9bf08",
+          "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+          "expected_upstream_git_blob": "abf0390320aa14406af7a520b9b0739fdda9bf08"
+        }
+      ]
+    }
+  ]
+}

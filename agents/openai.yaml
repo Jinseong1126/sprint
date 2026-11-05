@@ -1,0 +1,6 @@
+interface:
+  display_name: "Product Sprint"
+  short_description: "개발·핵심 결정 이해·업무 중심 UI·독립 검수"
+  default_prompt: "Use $product-sprint to develop the current project with evidence-based checks and concise human decision briefings."
+policy:
+  allow_implicit_invocation: false
